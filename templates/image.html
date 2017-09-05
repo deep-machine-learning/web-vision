@@ -1,0 +1,9 @@
+<!doctype html>
+<head>
+  <link rel="stylesheet" type="text/css" href="theme.css">
+</head>
+<body>
+    <img src="{{ url_for('static',filename = 'Logo.jpg') }}" alt = 'Logo' height="128" width="128" align="middle" />
+    <img src="{{url_for('send_image', filename = image)}}" align = "middle"/>
+    <h1>Prediction: {{ prediction }} </h1>
+</body>
